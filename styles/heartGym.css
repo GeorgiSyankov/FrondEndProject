@@ -1,0 +1,85 @@
+body{
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: rgb(62, 89, 97);
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    /* padding-top: 5em; */
+    box-sizing: content-box;
+    color: #ff8c00;
+    background-image: url(/images/headerbackground.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(49, 56, 54);  
+}
+.Logo{
+    box-sizing: border-box;
+    width: 0vw;
+    height: 0vh;
+    background-position: left;
+    background-repeat: no-repeat;
+    /* padding-bottom: 0em; */
+    padding-top: 2em;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    font-size: 7em;
+    font-family: 'Shojumaru', cursive;
+    margin: 0 auto;
+    cursor: default;
+}
+nav{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    /* border: 5px solid #f5deb3; */
+}
+
+.navbar a{
+    float: left;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+    width: 10em;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 5px solid #ff8c00;
+    background-color: #313836;
+    background-image: url(../images/sidebar_background.jpg);
+}
+.clear{
+    clear: both;
+}
+a{
+    color: #f5deb3;
+}
+
+footer{
+    color: #f5deb3;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: right;
+    background-color:#313836;
+    border-top: 5px double #ff8c00;
+}
+.social{
+    font-size: 3em;
+    color: #f5deb3;
+    position: fixed;
+    text-align: left;
+    /* margin-bottom: 2em; */
+}
