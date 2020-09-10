@@ -2,34 +2,23 @@ body{
     box-sizing: border-box;
     margin: 0 auto;
     background-color: rgb(62, 89, 97);
-    background-image: url(/images/background.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
     background-attachment: fixed;
+    
 }
-
+/* <---Header Start---> */
 header{
     width: 100%;
     margin: 0 auto;
-    /* padding-top: 5em; */
     box-sizing: content-box;
     color: #ff8c00;
-    background-image: url(/images/headerbackground.jpg);
+    background-image: url(../images/headerbackground.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgb(49, 56, 54);  
+    background-color: rgb(49, 56, 54); 
 }
-.Logo{
-    box-sizing: border-box;
-    width: 0vw;
-    height: 0vh;
-    background-position: left;
-    background-repeat: no-repeat;
-    /* padding-bottom: 0em; */
-    padding-top: 2em;
-    position: relative;
-}
-
 h1{
     text-align: center;
     font-size: 7em;
@@ -37,25 +26,60 @@ h1{
     margin: 0 auto;
     cursor: default;
 }
+.Logo{
+    box-sizing: border-box;
+    width: 0vh;
+    height: 0vh;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-top: 2em;
+    position: relative;
+}
+.hov:hover{
+    background-position: left;
+    padding-bottom: 0em;
+    position: relative;
+    animation: mymove 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes mymove{
+    0% {transform: scale(1);}
+  25% {transform: scale(.97);}
+  35% {transform: scale(.9);}
+  45% {transform: scale(1.1);}
+  55% {transform: scale(.9);}
+  65% {transform: scale(1.1);}
+  75% {transform: scale(1.03);}
+  100% {transform: scale(1);}
+
+}
+/* <---Header End---> */
+
+/* <---NavBar Start---> */
 nav{
     width: 100%;
     height: auto;
     margin: 0 auto;
     /* border: 5px solid #f5deb3; */
+    
 }
-
 .navbar a{
     float: left;
     font-size: 2em;
     font-style: italic;
     font-weight: 900;
     text-align: center;
-    width: 10em;
+    width: calc(100%/6);
     box-sizing: border-box;
     text-decoration: none;
     border: 5px solid #ff8c00;
     background-color: #313836;
     background-image: url(../images/sidebar_background.jpg);
+}
+.navbar a:hover{
+    background: #ff8c00;
+    
 }
 .clear{
     clear: both;
@@ -63,13 +87,188 @@ nav{
 a{
     color: #f5deb3;
 }
+/* <---NavBar End---> */
+/* <----------_MAIN START_----------> */
+main{
+    margin-bottom: 5em;
+    width: 100%;
+}
+/* <----------_MAIN END_----------> */
 
+/* <-------------HOME START-----------> */
+.home{
+    color: #f5deb3;
+    text-align: right;
+    font-size: 2em;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 70%;
+}
+.home p{
+    box-sizing: border-box;
+    border: #ff8c00 dashed 5px;
+    margin-left: 60%;
+    
+    
+}
+/* <---------------HOME END---------------> */
+
+/* <---News Start---> */
+.news{
+    width: auto;
+    padding: 0em 10em 0em;
+    box-sizing: border-box;
+}
+.clearfix{
+    width: 100%;
+    /* border: solid 5px #ff8c00; */
+    overflow: auto;
+    padding: 1em;
+}
+main .news .clearfix img{
+    position: relative;
+    z-index: 9;
+    width: 28em;
+    height: 28em;
+    
+}
+.news_one{
+    float: left;
+}
+.news_two{
+    float: right;
+}
+.news_three{
+    float: left;
+}
+.news p{
+    opacity: 80%;
+    margin: 0 auto;
+    width: 100%;
+    color: #f5deb3;
+    background-color: #313836;
+    border-bottom: #ff8c00 solid 5px;
+    font-size: 1.5em; 
+}
+/* <---News End---> */
+
+/* <-----About Us Start-----> */
+
+.aboutUs{
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-image: url(../images/sidebar_background.jpg);
+    width: 90%;
+}
+
+.aboutUs img{
+    display: inline-block;
+    position: relative;
+    width: 450px;
+    margin-left: 10em;
+    margin-top: 5em;
+}
+.aboutUs p{
+    font-size: .5em;
+    width: 50%;
+}
+.clear{
+    clear: both;
+}
+.Social{
+    width: 20em;
+    position: relative;
+    display: inline-block;
+    font-size: 3em;
+    border: #ff8c00 solid 5px;
+    color: #f5deb3;
+    background-color: #313836;
+}
+.fa-facebook:hover{
+    opacity:50% ;
+}
+.fa-twitter:hover{
+    opacity: 50%;
+}
+.fa-instagram:hover{
+    opacity: 50%;
+}
+/* <-----About Us End-----> */
+
+/* <-----SERVICES START-----> */
+.services{
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-image: url(../images/backgroundServices.jpg);
+    background-position: center;
+    padding-bottom: 1%;
+    
+
+}
+.services img{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 99;
+    margin: 5em;
+    border: #ff8c00 solid 5px;  
+}
+.services p{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 2em;
+    color: #f5deb3;
+}
+
+/* <-----SERVICES END-----> */
+
+
+/* <-----GALLERY START-----> */
+.gallery{
+    /* border: 5px solid #ff8c00; */
+    margin: 0 auto;
+    margin: 2em;
+    position: relative;
+    padding-bottom: 2em;
+}
+.gallery img{
+    margin: 1em;
+    border: 5px solid #ff8c00; 
+}
+
+/* <-----GALERY END-----> */
+
+/* <---Contacts Start---> */
+.maps{
+    position: relative;
+    margin: 0 auto;
+    padding-left: 15%;
+    padding-top: 5% ;
+}
+.mapInfo{
+    display: inline-block;
+    width: 20em;
+    height: 10em;
+    color: #f5deb3;
+    background-color: #313836;
+    font-size: 2em;
+    border: #ff8c00 5px solid;
+    cursor: default;
+    opacity: 80%;
+    margin-left: 5em;
+}
+.mapInfo a:hover{
+    opacity: 50%;
+}
+/* <-----Contact End-----> */
+
+/* <------FOOTER START------> */
 footer{
     color: #f5deb3;
     position: fixed;
+    z-index: 99;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: calc(100%);
     height: auto;
     box-sizing: border-box;
     text-align: right;
@@ -81,5 +280,24 @@ footer{
     color: #f5deb3;
     position: fixed;
     text-align: left;
-    /* margin-bottom: 2em; */
 }
+.fa-facebook-square:hover{
+    color: #1c75bc;
+    background: #fff;
+}
+.fa-google-plus-square:hover{
+    color: #cc3731;
+    background: #fff;
+}
+.fa-twitter-square:hover{
+    color: #29a7df;
+    background: #fff;
+}
+.fa-instagram-square:hover{
+    color: #ec4521;
+    background: #fff;
+}
+.author:hover{
+    opacity: 50%;
+}
+/* <------FOOTER END------> */
